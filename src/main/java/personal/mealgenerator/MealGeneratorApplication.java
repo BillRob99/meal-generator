@@ -1,4 +1,4 @@
-package personal.meal_generator;
+package personal.mealgenerator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
