@@ -1,4 +1,4 @@
-package personal.mealgenerator.model;
+package mealgenerator.model.internal;
 
 import lombok.Data;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -14,8 +14,6 @@ public class Ingredient {
     private Long sourceId;
 
     private String name;
-
-    private String description;
 
     private String imageLink;
 }

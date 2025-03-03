@@ -1,4 +1,6 @@
-package personal.mealgenerator.model;
+package mealgenerator.model.internal;
+
+import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum MealCategory {
     BEEF ("Beef"),
@@ -31,6 +33,7 @@ public enum MealCategory {
         throw new IllegalArgumentException("No enum constant for name: " + name);
     }
 
+    @JsonValue
     public String toString() {
         return this.NAME;
     }

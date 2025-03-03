@@ -1,13 +1,19 @@
-package personal.mealgenerator.model;
+package mealgenerator.model.internal;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.MongoId;
 
 import java.util.List;
 
 @Data
+@Builder
 @Document(collection = "meals")
+@AllArgsConstructor
+@NoArgsConstructor
 public class Meal {
 
     @MongoId
@@ -17,7 +23,11 @@ public class Meal {
 
     private String name;
 
+    private String area;
+
     private MealCategory category;
+
+    private String instructions;
 
     private List<String> tags;
 
@@ -27,5 +37,5 @@ public class Meal {
 
     private String videoLink;
 
-    private List<Ingredient> ingredients;
+    private List<IngredientMeasurement> ingredientMeasurements;
 }
