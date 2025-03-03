@@ -12,4 +12,6 @@ public interface MealService {
     Meal getMeal(String id);
 
     Meal createMeal(Meal meal);
+
+    List<Meal> loadMealsByCategory(MealCategory category);
 }
