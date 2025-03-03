@@ -29,4 +29,9 @@ public class MealResource {
     public Meal createMeal(@RequestBody Meal meal) {
         return mealService.createMeal(meal);
     }
+
+    @PostMapping("/load")
+    public List<Meal> loadMealsByCategory(@RequestParam MealCategory category) {
+        return mealService.loadMealsByCategory(category);
+    }
 }
