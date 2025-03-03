@@ -1,7 +1,10 @@
-package personal.mealgenerator.repository;
+package mealgenerator.repository;
 
+import mealgenerator.model.internal.Meal;
 import org.springframework.data.mongodb.repository.MongoRepository;
-import personal.mealgenerator.model.Meal;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface MealRepository extends MongoRepository<Meal, String> {
+
 }
