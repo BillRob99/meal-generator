@@ -23,9 +23,6 @@ public class MealDbProxyImpl implements MealDbProxy {
     private static final String FILTER = "filter.php?";
     private static final String LOOKUP = "lookup.php?i=";
 
-
-
-
     @Override
     public List<MealDbMeal> getMealsByCategory(MealCategory category) {
         // Initial response is in summary format, we then need to query each meal by id

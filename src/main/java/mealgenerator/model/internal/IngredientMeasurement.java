@@ -17,7 +17,7 @@ public class IngredientMeasurement {
 
     private Ingredient ingredient;
 
-    private BigDecimal measurement;
+    private BigDecimal quantity;
 
     private UnitOfMeasure unitOfMeasure;
 }
