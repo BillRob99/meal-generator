@@ -55,9 +55,9 @@ public class MealTransformer implements Transformer<MealDbMeal, Meal> {
     }
 
 
-    private static void addIngredientMeasurementToList(List<IngredientMeasurement> ingredientMeasurements, String ingredientName, String amount) {
+    private static void addIngredientMeasurementToList(List<IngredientMeasurement> ingredientMeasurements, String ingredientName, String quantity) {
 
-        if (ingredientName == null || ingredientName.isEmpty() || amount == null || amount.isEmpty()) {
+        if (ingredientName == null || ingredientName.isEmpty() || quantity == null || quantity.isEmpty()) {
             return;
         }
 
@@ -65,7 +65,7 @@ public class MealTransformer implements Transformer<MealDbMeal, Meal> {
         Ingredient ingredient = new Ingredient();
         ingredient.setName(ingredientName);
         ingredientMeasurement.setIngredient(ingredient);
-        // TODO: Implement conversion to unit of measure + amount
+        // TODO: Implement conversion to unit of measure + quantity
 
         ingredientMeasurements.add(ingredientMeasurement);
     }

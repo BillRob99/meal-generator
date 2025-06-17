@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class CustomMealRepositoryImpl implements CustomMealRepository{
+public class CustomMealRepositoryImpl implements CustomMealRepository {
 
     @Autowired
     private MongoTemplate mongoTemplate;
